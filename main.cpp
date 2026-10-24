@@ -13,9 +13,8 @@ int main(int argc, char **argv) {
   std::cout << std::unitbuf;
   std::cerr << std::unitbuf;
 
-  // I'm guessing fd is full domain?
-  // what is AF again?
-  // Address F
+  // fd = file descriptor
+  // af = address family
   int server_fd = socket(AF_INET, SOCK_STREAM, 0);
   if (server_fd < 0) {
    std::cerr << "Failed to create server socket\n";
